@@ -1,0 +1,60 @@
+.hero
+  min-height: 980px
+  padding: 285px 0 200px
+  background: url(images/general/hero-bg.svg) no-repeat center bottom / cover
+  +r(1499)
+    min-height: 880px
+    padding-top: 190px
+  +r(1200)
+    min-height: auto
+  +r(767)
+    padding-top: 120px
+  &__content
+    text-align: center
+    color: #fff
+    h1
+      margin-bottom: 30px
+      font-weight: 800
+      color: #fff
+      text-transform: uppercase
+      letter-spacing: 0.05em
+      text-shadow: 5px 2px 20px rgba(0, 0, 0, 0.2)
+    p
+      +r(992)
+        br
+          display: none
+    .btn
+      margin-top: 30px
+  &__descr
+    max-width: 970px
+    margin: 0 auto
+  &__subtitle
+    font-family: $cs-font
+    font-size: 35px
+    font-weight: 500
+    text-shadow: 5px 2px 20px rgba(0, 0, 0, 0.2)
+    +r(992)
+      font-size: 25px
+    +r(480)
+      font-size: 22px
+    &::after
+      content: ''
+      display: block
+      width: 170px
+      height: 2px
+      margin: 35px auto 25px
+      background-color: #fff
+      +r(992)
+        margin: 20px auto 15px
+      +r(480)
+        margin: 10px auto 15px
+  &--inner
+    min-height: auto
+    padding: 200px 0 90px
+    +r(1499)
+      min-height: auto
+      padding-top: 190px
+    +r(767)
+      padding-bottom: 60px
+    .scroll-down
+      display: none

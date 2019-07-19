@@ -1,0 +1,184 @@
+*,
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+/* Clearfix for float elements */
+.clearfix:before,
+.clearfix:after
+  content: ''
+  display: table
+
+.clearfix:after 
+  clear: both
+
+.clearfix
+  zoom: 1 /* For IE 6/7 hasLayout */
+
+
+/* Common styles */
+html
+  overflow-x: hidden
+
+body
+  margin: 0
+  padding: 0
+  height: 100%
+  min-width: 320px
+  font-family: $main-font
+  font-size: 16px
+  font-weight: 300
+  line-height: 1.6
+  color: $main-color
+  overflow-x: hidden
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  color: $blue
+  font-weight: 400
+  +trans
+  &:hover, &:focus
+    color: $accent
+    outline: none
+    text-decoration: none
+
+section
+  position: relative
+  z-index: 1
+  padding: 90px 0
+  +r(767)
+    padding: 40px 0
+
+h1, h2, h3, h4, h5, h6
+  color: $title-color
+  line-height: 1.3
+
+h1
+  font-size: 70px
+  +r(1400)
+    font-size: 50px
+  +r(992)
+    font-size: 40px
+  +r(767)
+    font-size: 30px
+  +r(480)
+    font-size: 28px
+
+h2
+  font-size: 50px
+  +r(1200)
+    font-size: 40px
+  +r(576)
+    font-size: 28px
+  +r(480)
+    font-size: 26px
+
+/* Hidden element */
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  border: 0
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+/* Buttons */
+.btn
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+  max-width: 300px
+  padding: 22px 15px
+  font-family: $main-font
+  font-size: 16px
+  font-weight: 700
+  color: $accent
+  text-align: center
+  background: #fff
+  background-clip: padding-box
+  border: 2px solid transparent
+  border-radius: 50px
+  outline: none
+  text-decoration: none
+  cursor: pointer
+  user-select: none
+  transition: all .25s ease
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3)
+  +r(576)
+    font-size: 14px
+    padding: 15px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -1
+    margin: -2px
+    border-radius: inherit
+    background: linear-gradient(to right, #282882, #019AB5)
+  &:hover
+    background-color: lighten($accent, 5%)
+    color: #fff
+  &:focus
+    background-color: darken($accent, 5%)
+    color: #fff
+    outline: none
+  &[disabled]
+    background-color: #e5e5e5
+    cursor: not-allowed
+    color: #fff
+  &--white
+    border: 0
+    background: #fff
+    color: $accent
+    &::before
+      display: none
+    &:hover, &:focus
+      background-color: #f2f9fa
+      color: $accent
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.content
+  flex: 1 0 auto
+
+.section-head
+  margin-bottom: 30px
+  +r(992)
+    text-align: center
+  &__suptitle
+    margin-bottom: 10px
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+    color: $accent
+    +r(576)
+      font-size: 14px
+
+.md-text
+  font-size: 21px
+  font-weight: 400
+  color: $dark
+  +r(767)
+    font-size: 18px
+
+.text-center
+  text-align: center
+
+.hidden
+  display: none

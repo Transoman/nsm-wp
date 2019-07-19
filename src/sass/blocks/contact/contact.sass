@@ -1,0 +1,64 @@
+.contact
+  &::before
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 21%
+    z-index: -1
+    width: 1800px
+    height: 880px
+    background: url(images/general/polygon-2.svg) no-repeat center top
+    pointer-events: none
+  &__row
+    display: flex
+    align-items: center
+    +r(992)
+      display: block
+  &__left
+    width: 41.02%
+    flex-shrink: 0
+    margin-right: 30px
+    +r(992)
+      width: auto
+      margin-right: 0
+      margin-bottom: 30px
+    .btn
+      margin-top: 25px
+      +r(992)
+        display: block
+        margin: 25px auto 0
+  &__right
+    flex-grow: 1
+  &__item
+    margin-bottom: 25px
+    font-size: 21px
+    font-weight: 400
+    color: $honey-flower
+    +r(576)
+      font-size: 18px
+    &-label
+      display: flex
+      align-items: center
+      margin-bottom: 5px
+      font-size: 16px
+      font-weight: 400
+      color: #999
+      svg
+        width: 14px
+        height: 14px
+        fill: #999
+        margin-right: 10px
+    a
+      color: $honey-flower
+      &:hover, &:focus
+        color: $accent
+  &__map
+    width: 830px
+    height: 560px
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    overflow: hidden
+    +r(1499)
+      width: auto
+    +r(767)
+      height: 300px

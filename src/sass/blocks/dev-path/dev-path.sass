@@ -1,0 +1,27 @@
+.dev-path
+  z-index: 1
+  padding-bottom: 40px
+  &::before
+    content: ''
+    position: absolute
+    top: -300px
+    left: 14%
+    z-index: -1
+    width: 2200px
+    height: 1780px
+    background: url(images/general/polygon.svg) no-repeat center / contain
+    pointer-events: none
+  &__content
+    +r(992)
+      margin-bottom: 30px
+  &__float-img
+    margin-left: -15px
+    +r(992)
+      margin-left: 0
+    img
+      max-width: none
+      +r(1200)
+        width: 600px
+      +r(992)
+        width: auto
+        max-width: 100%

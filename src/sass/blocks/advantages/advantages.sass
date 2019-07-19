@@ -1,0 +1,70 @@
+.advantages
+  padding-top: 50px
+  +r(767)
+    padding-top: 40px
+  .section-head
+    margin-bottom: 65px
+    +r(767)
+      margin-bottom: 30px
+  .btn
+    margin-top: 30px
+    
+.advantages-card
+  position: relative
+  height: calc(100% - 30px)
+  margin-bottom: 30px
+  background-color: #fff
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+  border-radius: 5px
+  border-bottom: 2px solid transparent
+  +trans
+  +r(1024)
+    border: 0
+  &:hover
+    border-color: $accent
+    .advantages-card
+      &__text
+        opacity: 1
+        visibility: visible
+  &__head
+    display: flex
+    align-items: center
+    padding: 35px 25px 30px 30px
+    +r(480)
+      display: block
+      text-align: center
+      padding: 15px
+  &__img
+    margin-right: 30px
+    +r(480)
+      margin-right: 0
+      margin-bottom: 20px
+  &__title
+    margin: 0
+    font-size: 14px
+    color: #2F046B
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    line-height: 1.85
+  &__text
+    +rmin(1025)
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      z-index: 1
+      padding: 25px 30px 10px
+      background: linear-gradient(91.44deg, #282882 -19.6%, #019AB5 113.48%)
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+      border-radius: 0 0 10px 0
+      font-size: 12px
+      font-weight: 400
+      color: #fff
+      opacity: 0
+      visibility: hidden
+      +trans
+    +r(1024)
+      padding: 0 30px 10px
+    +r(480)
+      padding: 0 15px 10px
+      text-align: center
