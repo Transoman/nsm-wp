@@ -51,8 +51,8 @@ if ( have_rows('about_layout') ):
         </div>
 
         <img src="<?php echo THEME_URL; ?>/images/general/diamond.svg" class="float-img float-img-1" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle.svg" class="float-img float-img-2" alt="">
-        <img src="<?php echo THEME_URL; ?>/images/general/circle.svg" class="float-img float-img-3" alt="">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle.svg" width="26" class="float-img float-img-2" alt="">
+        <img src="<?php echo THEME_URL; ?>/images/general/circle.svg" width="26" class="float-img float-img-3" alt="">
 
       </section>
 
