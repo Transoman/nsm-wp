@@ -103,8 +103,7 @@ h2
   color: $accent
   text-align: center
   background: #fff
-  background-clip: padding-box
-  border: 2px solid transparent
+  border: 2px solid $blue
   border-radius: 50px
   outline: none
   text-decoration: none
@@ -113,26 +112,15 @@ h2
   transition: all .25s ease
   text-transform: uppercase
   letter-spacing: 0.1em
-  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3)
+  box-shadow: 0 10px 40px rgba(47, 160, 180, 0.2)
   +r(576)
     font-size: 14px
     padding: 15px
-  &::before
-    content: ''
-    position: absolute
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    z-index: -1
-    margin: -2px
-    border-radius: inherit
-    background: linear-gradient(to right, #282882, #019AB5)
   &:hover
-    background-color: lighten($accent, 5%)
+    background-color: $blue
     color: #fff
   &:focus
-    background-color: darken($accent, 5%)
+    background-color: darken($blue, 5%)
     color: #fff
     outline: none
   &[disabled]
@@ -143,8 +131,6 @@ h2
     border: 0
     background: #fff
     color: $accent
-    &::before
-      display: none
     &:hover, &:focus
       background-color: #f2f9fa
       color: $accent
