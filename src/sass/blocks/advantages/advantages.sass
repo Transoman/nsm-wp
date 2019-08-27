@@ -16,16 +16,7 @@
   background-color: #fff
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
   border-radius: 5px
-  border-bottom: 2px solid transparent
   +trans
-  +r(1024)
-    border: 0
-  &:hover
-    border-color: $accent
-    .advantages-card
-      &__text
-        opacity: 1
-        visibility: visible
   &__head
     display: flex
     align-items: center
@@ -47,24 +38,7 @@
     letter-spacing: 0.05em
     line-height: 1.85
   &__text
-    +rmin(1025)
-      position: absolute
-      top: 100%
-      left: 0
-      right: 0
-      z-index: 1
-      padding: 25px 30px 10px
-      background: linear-gradient(91.44deg, #282882 -19.6%, #019AB5 113.48%)
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
-      border-radius: 0 0 10px 0
-      font-size: 12px
-      font-weight: 400
-      color: #fff
-      opacity: 0
-      visibility: hidden
-      +trans
-    +r(1024)
-      padding: 0 30px 10px
+    padding: 0 30px 10px
     +r(480)
       padding: 0 15px 10px
       text-align: center
