@@ -3,7 +3,8 @@
 global.jQuery = require('jquery');
 let svg4everybody = require('svg4everybody'),
   popup = require('jquery-popup-overlay'),
-  tabslet = require('tabslet');
+  // tabslet = require('tabslet'),
+  Simplebar = require('simplebar');
 
 jQuery(document).ready(function($) {
   // Toggle nav menu

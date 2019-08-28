@@ -2,70 +2,15 @@
   padding-top: 100px
   +r(767)
     padding-top: 40px
-
-.services-tabs
-  &__content
-    padding-top: 20px
-    p
-      &:first-of-type
-        font-size: 21px
-        font-weight: 400
-        color: $dark
-        +r(767)
-          font-size: 18px
-    .btn
-      margin-top: 40px
-      +r(992)
-        display: block
-        margin: 40px auto 0
-  &__img-wrap
-    +r(992)
-      display: none
-
-.services-tabs-list
-  display: flex
-  flex-wrap: wrap
-  margin: 0 -15px 100px
-  padding: 0
-  list-style: none
-  +r(992)
-    margin-bottom: 50px
-  +r(576)
-    margin-bottom: 30px
-  li
-    width: 25%
-    padding: 0 15px
-    +r(1200)
-      width: 33.33%
-    +r(992)
-      width: 50%
-    +r(767)
-      width: 100%
-    &.active
-      a
-        box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1)
-        color: $honey-flower
-        border-color: $accent
-  a
+  .advantages-card
     display: flex
-    align-items: flex-end
-    height: 100%
-    padding: 30px 25px 50px
-    background-color: #fff
-    border-radius: 5px
-    font-size: 18px
-    font-weight: 600
-    color: $dark
-    border-bottom: 2px solid transparent
-    +r(767)
-      padding: 20px
-      align-items: center
-    &:hover
-      box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1)
-      color: $honey-flower
-      border-color: $accent
-    img
-      margin-right: 22px
-      +r(576)
-        width: 40px
-        margin-right: 15px
+    flex-direction: column
+    &__text
+      display: flex
+      flex-direction: column
+      flex-grow: 1
+      padding-bottom: 40px
+      .text-center
+        margin-top: auto
+        .btn
+          margin-top: 20px
