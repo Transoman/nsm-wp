@@ -39,8 +39,7 @@
     "jquery": "^3.4.1",
     "jquery-popup-overlay": "^2.1.1",
     "simplebar": "^4.1.0",
-    "svg4everybody": "^2.1.9",
-    "tabslet": "^1.7.3"
+    "svg4everybody": "^2.1.9"
   },
   "browserslist": [
     "last 5 version",
