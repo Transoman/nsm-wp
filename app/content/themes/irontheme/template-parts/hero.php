@@ -18,7 +18,7 @@
       <?php endif; ?>
 
       <?php if (is_home() || is_front_page()): ?>
-        <a href="#" class="btn btn--white callback_open">обратный звонок</a>
+        <a href="#" class="btn btn--white consultation_open">Получить консультацию</a>
       <?php endif; ?>
     </div>
   </div>

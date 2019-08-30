@@ -3,15 +3,33 @@
   z-index: 2
   +r(767)
     padding-top: 40px
-  .advantages-card
-    display: flex
-    flex-direction: column
-    &__text
-      display: flex
-      flex-direction: column
-      flex-grow: 1
-      padding-bottom: 40px
-      .text-center
-        margin-top: auto
-        .btn
-          margin-top: 20px
+    +r(992)
+      margin-bottom: 30px
+  &__content
+    margin-bottom: 70px
+    +r(767)
+      margin-bottom: 30px
+  &__list
+    margin-bottom: 50px
+  &__item
+    margin-bottom: 35px
+    &:last-child
+      margin-bottom: 0
+    &-title
+      @extend .section-head__suptitle
+    &-content
+      h4
+        margin-bottom: 3px
+      p
+        &:last-child
+          margin-bottom: 0
+  &__img-wrap
+    +r(992)
+      margin-bottom: 30px
+      text-align: center
+    img
+      +r(767)
+        max-width: 250px
+  &__btn
+    +r(992)
+      text-align: center

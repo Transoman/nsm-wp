@@ -12,32 +12,40 @@ if ($services): ?>
   <section class="services">
     <div class="container">
 
-      <div class="section-head text-center">
-        <h2 class="section-title">Наши услуги</h2>
-      </div>
-
       <div class="row">
+        <div class="col-lg-6">
+          <div class="section-head">
+            <h3 class="section-head__suptitle">Сопутствующие возможности</h3>
+            <h2 class="section-title">Наши услуги</h2>
+          </div>
 
-				<?php while ($services->have_posts()): $services->the_post();
-					$title = get_the_title(); ?>
-          <div class="col-lg-6">
-            <div class="advantages-card">
-              <div class="advantages-card__head">
-                <img src="<?php echo THEME_URL; ?>/images/content/serv-icon.svg" width="60" alt="<?php echo esc_html($title); ?>" class="advantages-card__img">
-                <h3 class="advantages-card__title"><?php echo $title; ?></h3>
-              </div>
+          <div class="services__content">
+            <p class="md-text">Полный спектр услуг по изготовлению pos-, аудио-, видео материалов</p>
+            <p>Создание креативных концепций. Изготовление всех видов рекламной продукцию от аудио до видео.</p>
+          </div>
 
-              <div class="advantages-card__text">
-								<?php the_content(); ?>
+          <div class="services__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/serv-pic.svg" alt="">
+          </div>
+        </div>
 
-                <div class="text-center">
-                  <a href="#" class="btn order-service_open" data-title="<?php echo $title; ?>">Хочу так же</a>
+        <div class="col-lg-6">
+          <div class="services__list">
+            <?php while ($services->have_posts()): $services->the_post();
+            $title = get_the_title(); ?>
+              <div class="services__item">
+                <h3 class="services__item-title"><?php echo $title; ?></h3>
+                <div class="services__item-content">
+                  <?php the_content(); ?>
                 </div>
               </div>
-
-            </div>
+            <?php endwhile; wp_reset_postdata(); ?>
           </div>
-				<?php endwhile; wp_reset_postdata(); ?>
+
+          <div class="services__btn">
+            <a href="#" class="btn consultation_open">Получить консультацию</a>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -104,7 +112,7 @@ if ( have_rows('home_layout') ):
           <?php endif; ?>
 
           <div class="text-center">
-            <a href="#" class="btn callback_open">обратный звонок</a>
+            <a href="#" class="btn consultation_open">Получить консультацию</a>
           </div>
 
         </div>
@@ -138,7 +146,7 @@ endif;
         <div class="principles__content">
           <p class="md-text">Наш основной принцип работы – это бизнесориентированность</p>
           <p>Мы изначально рассматриваем все проекты с точки зрения финансовой эффективности для клиента в среднеили дальнесрочном периодах. Мы ведем проекты в формате 360 градусов, с максимальными охватами и качественными показателями достижения результатов. С нами легко работать – мы говорим на языке цифр.</p>
-          <a href="#" class="btn callback_open">обратный звонок</a>
+          <a href="#" class="btn consultation_open">Получить консультацию</a>
         </div>
       </div>
     </div>

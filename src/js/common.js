@@ -30,14 +30,6 @@ jQuery(document).ready(function($) {
     }, 1000);
   });
 
-  $('.services-tabs').tabslet({
-    animation: true
-  });
-
-  $('.products-tabs').tabslet({
-    animation: true
-  });
-
   let contactForm = function() {
     $('.contact-form').each(function() {
       let submit = $(this).find('[type="submit"]');

@@ -43,7 +43,7 @@ if ( have_rows('about_layout') ):
               <div class="about__content-2">
                 <?php the_sub_field('right_text'); ?>
                 <?php if (get_sub_field('right_text')): ?>
-                  <a href="#" class="btn callback_open">Хочу так же</a>
+                  <a href="#" class="btn consultation_open">Получить консультацию</a>
                 <?php endif; ?>
               </div>
             </div>

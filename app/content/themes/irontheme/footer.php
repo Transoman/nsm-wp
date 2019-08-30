@@ -23,6 +23,17 @@
     </div>
   </div>
 
+  <div id="consultation" class="modal">
+    <button type="button" class="modal__close consultation_close"></button>
+
+    <h3 class="modal__title">Получить консультацию</h3>
+
+    <div class="contact-form">
+		  <?php echo do_shortcode('[contact-form-7 id="203" title="Получить консультацию"]'); ?>
+      <div class="hidden" data-contact-btn="true"><button class="btn "><span class="btn-load"></span><span class="text"></span></button></div>
+    </div>
+  </div>
+
   <div id="order-service" class="modal">
     <button type="button" class="modal__close order-service_close"></button>
 
