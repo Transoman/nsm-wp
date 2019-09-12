@@ -6,51 +6,68 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/hero'); ?>
 
-<?php
-$services = get_services(-1);
-if ($services): ?>
-  <section class="services">
-    <div class="container">
+<section class="services">
+  <div class="container">
 
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="section-head">
-            <h3 class="section-head__suptitle">Сопутствующие возможности</h3>
-            <h2 class="section-title">Наши услуги</h2>
-          </div>
-
-          <div class="services__content">
-            <p class="md-text">Полный спектр услуг по изготовлению pos-, аудио-, видео материалов</p>
-            <p>Создание креативных концепций. Изготовление всех видов рекламной продукцию от аудио до видео.</p>
-          </div>
-
-          <div class="services__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/serv-pic.svg" alt="">
-          </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-head">
+          <h3 class="section-head__suptitle">Категория клиента</h3>
+          <h2 class="section-title">Наши услуги</h2>
         </div>
 
-        <div class="col-lg-6">
-          <div class="services__list">
-            <?php while ($services->have_posts()): $services->the_post();
-            $title = get_the_title(); ?>
-              <div class="services__item">
-                <h3 class="services__item-title"><?php echo $title; ?></h3>
-                <div class="services__item-content">
-                  <?php the_content(); ?>
-                </div>
-              </div>
-            <?php endwhile; wp_reset_postdata(); ?>
-          </div>
-
-          <div class="services__btn">
-            <a href="#" class="btn consultation_open">Получить консультацию</a>
-          </div>
+        <div class="services__content">
+          <p class="md-text">В2В и В2С</p>
+          <p>Мы всегда внимательно изучаем специфику деятельности конкретного предприятия, анализируем возможные риски, которые неминуемы в процессе работы. Ведь в разных отраслях хозяйственной деятельности действуют свои правила. Первый и важный шаг к успешному сотрудничеству:  cогласование бизнес задач и подготовка технического задания по проекту.</p>
         </div>
 
+        <div class="services__img-wrap">
+          <img src="<?php echo THEME_URL; ?>/images/content/serv-pic.svg" alt="">
+        </div>
       </div>
+
+      <div class="col-lg-6">
+        <div class="services__list">
+          <div class="services__item">
+            <h3 class="services__item-title">География нашей работы</h3>
+            <div class="services__item-content">
+              <p>Маркетинговые / рекламные коммуникации</p>
+              <p>Россия, Европа, СНГ, страны Балтии, Северной Америки</p>
+              <p>Богатый опыт позволяет нам в кратчайшие сроки предоставить профессионально подготовленный документ. Он даст четкое понимание динамики развития соответствующего направления. Маркетинговые исследования в России от NSM Group – это отличное качество и доступная цена.</p>
+            </div>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item-title">Основные инструменты</h3>
+            <div class="services__item-content">
+              <p>ATL, BTL, Digital</p>
+              <h4>ATL</h4>
+              <p>Размещение на ТВ, радио, в печатных изданиях (offline / online версии), наружная реклама, LED</p>
+              <h4>BTL</h4>
+              <p>Организация и проведение event-мероприятий, торговых и промо акций, обеспечение участия клиента в выставках, конференциях. Спецпроекты</p>
+              <h4>Digital</h4>
+              <p>Контекстная реклама, баннерная реклама на тематических площадках, медийная реклама, SEO, SMM. Etc</p>
+            </div>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item-title">Сопутствующие возможности</h3>
+            <div class="services__item-content">
+              <p>Полный спектр услуг по изготовлению pos-, аудио-, видео материалов.</p>
+              <p>Создание креативных концепций. Изготовление всех видов рекламной продукцию от аудио до видео.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="services__btn">
+          <a href="#" class="btn" target="_blank">Скачать презентацию</a>
+        </div>
+      </div>
+
     </div>
-  </section>
-<?php endif; ?>
+  </div>
+</section>
 
 <section class="dev-path">
   <div class="container">
@@ -111,20 +128,12 @@ if ( have_rows('home_layout') ):
             </div>
           <?php endif; ?>
 
-          <div class="text-center">
-            <a href="#" class="btn consultation_open">Получить консультацию</a>
-          </div>
-
         </div>
       </section>
 
     <?php endif;
 
   endwhile;
-
-else :
-
-  // no layouts found
 
 endif;
 
@@ -146,7 +155,6 @@ endif;
         <div class="principles__content">
           <p class="md-text">Наш основной принцип работы – это бизнесориентированность</p>
           <p>Мы изначально рассматриваем все проекты с точки зрения финансовой эффективности для клиента в среднеили дальнесрочном периодах. Мы ведем проекты в формате 360 градусов, с максимальными охватами и качественными показателями достижения результатов. С нами легко работать – мы говорим на языке цифр.</p>
-          <a href="#" class="btn consultation_open">Получить консультацию</a>
         </div>
       </div>
     </div>

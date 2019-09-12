@@ -29,21 +29,21 @@ function service_post_type() {
   register_post_type( 'service', $args );
 
 }
-add_action( 'init', 'service_post_type', 0 );
+//add_action( 'init', 'service_post_type', 0 );
 
 
 // Register Products Post Type
 function products_post_type() {
 
   $labels = array(
-    'name'                  => _x( 'Продукты', 'Post Type General Name', 'ith' ),
-    'singular_name'         => _x( 'Продукт', 'Post Type Singular Name', 'ith' ),
-    'menu_name'             => __( 'Продукты', 'ith' ),
-    'name_admin_bar'        => __( 'Продукты', 'ith' ),
-    'archives'              => __( 'Продукты', 'ith' ),
+    'name'                  => _x( 'Услуги', 'Post Type General Name', 'ith' ),
+    'singular_name'         => _x( 'Услуга', 'Post Type Singular Name', 'ith' ),
+    'menu_name'             => __( 'Услуги', 'ith' ),
+    'name_admin_bar'        => __( 'Услуги', 'ith' ),
+    'archives'              => __( 'Услуги', 'ith' ),
   );
   $args = array(
-    'label'                 => __( 'Продукт', 'ith' ),
+    'label'                 => __( 'Услуга', 'ith' ),
     'labels'                => $labels,
     'supports'              => array( 'title', 'editor', 'thumbnail' ),
     'hierarchical'          => false,

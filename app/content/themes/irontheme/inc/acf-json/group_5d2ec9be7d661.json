@@ -130,6 +130,25 @@
             ]
         },
         {
+            "key": "field_5d7a28dff4d30",
+            "label": "Презентация",
+            "name": "presentation",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5d2ed9ce2d92a",
             "label": "Подвал сайта",
             "name": "",
@@ -178,5 +197,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1563351548
+    "modified": 1568286985
 }

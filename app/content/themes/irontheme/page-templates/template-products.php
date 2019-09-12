@@ -10,7 +10,7 @@ get_header(); ?>
     <div class="container">
       <div class="section-head text-center">
         <h3 class="section-head__suptitle">Специализируемся</h3>
-        <h2 class="section-title">Наши продукты</h2>
+        <h2 class="section-title">Наши услуги</h2>
       </div>
 
       <?php $products = get_products(-1);
@@ -21,7 +21,7 @@ get_header(); ?>
               <div class="products-card__row row">
                 <div class="col-lg-6">
                   <div class="section-head">
-                    <h3 class="section-head__suptitle">Наши продукты</h3>
+                    <h3 class="section-head__suptitle">Наши услуги</h3>
                     <h2 class="section-title"><?php the_title(); ?> <span class="products-card__number"><?php echo str_pad($j++, 2, '0', STR_PAD_LEFT); ?></span></h2>
                   </div>
 
